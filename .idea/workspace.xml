@@ -68,6 +68,14 @@
       <updated>1580709918969</updated>
       <workItem from="1580709920368" duration="16297000" />
     </task>
+    <task id="LOCAL-00001" summary="pages edited, route cleaned up">
+      <created>1580824804434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580824804435</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +91,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pages edited, route cleaned up" />
+    <option name="LAST_COMMIT_MESSAGE" value="pages edited, route cleaned up" />
   </component>
 </project>
