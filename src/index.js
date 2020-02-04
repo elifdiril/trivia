@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
@@ -13,8 +12,7 @@ import WelcomePage from "./WelcomePage";
 const routing = (
     <Router>
         <div>
-            <Route path="/" component={App}/>
-            <Route path= {["/welcome", "/"]} component={WelcomePage} />
+            <Route exact path= {["/welcome", "/"]} component={WelcomePage} />
             <Route path="/question" component={QuestionPage} />
             <Route path="/correct-answer" component={CorrectAnswerPage} />
             <Route path="/wrong-answer" component={WrongAnswerPage} />

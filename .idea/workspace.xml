@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3965aca9-7cf7-430d-b4b7-36541b0a3b71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CorrectAnswerPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WelcomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WrongAnswerPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CorrectAnswerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CorrectAnswerPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WrongAnswerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/WrongAnswerPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
