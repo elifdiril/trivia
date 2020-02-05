@@ -13,7 +13,16 @@ class CorrectAnswerPage extends Component {
     }
 
     onClickContinueButton() {
-        this.props.history.push('/question', {questionIndex: this.state.qIndex + 1});
+        let index = this.state.qIndex;
+        if(this.props.location.state && this.props.location.state.questionIndex){
+            index = this.props.location.state.questionIndex;
+        }
+        if(index < 9){
+            this.props.history.push('/question', {questionIndex: index + 1});
+        }else{
+            this.props.history.push('/welcome');
+        }
+
     }
 
     render() {
@@ -26,7 +35,7 @@ class CorrectAnswerPage extends Component {
                             <CardBody>
                                 Correct!
                                 You have earned 100 points
-                                Total: {(this.props.qIndex + 2) * 100}
+                                Total: {(this.props.location.state.index + 1) * 100}
                             </CardBody>
                             <Button onClick={this.onClickContinueButton}> Continue </Button>
                         </CardBody>

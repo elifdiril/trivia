@@ -44,10 +44,13 @@ class QuestionPage extends Component {
 
     onClickAnswerButton(answer) {
         let index = this.state.questionIndex;
+        if(this.props.location.state && this.props.location.state.questionIndex){
+            index = this.props.location.state.questionIndex;
+        }
         let correctAns = this.state.correctAnswers[index];
 
         if (answer === correctAns) {
-            this.props.history.push('/correct-answer', {index: this.state.questionIndex, points: this.state.points});
+            this.props.history.push('/correct-answer', {questionIndex: index});
         } else
             this.props.history.push('/wrong-answer', {points: this.state.points});
     }
@@ -65,6 +68,9 @@ class QuestionPage extends Component {
 
     render() {
         let index = this.state.questionIndex;
+        if(this.props.location.state && this.props.location.state.questionIndex){
+            index = this.props.location.state.questionIndex;
+        }
         let answerArray = [];
         answerArray.push(this.state.correctAnswers[index]);
         if (this.state.incorrectAnswers.length > 0) {
