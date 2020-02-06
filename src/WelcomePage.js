@@ -26,7 +26,7 @@ class WelcomePage extends Component {
 
     render() {
         return (
-            <div class="d-flex align-items-center">
+            <div className="d-flex align-items-center">
                 <Container>
                     <Col md={{size: 6, offset: 3}}>
                         <Card>
@@ -34,8 +34,10 @@ class WelcomePage extends Component {
                             <CardBody>
                                 <CardTitle><b> A Trivia Game </b></CardTitle>
                                 <Button color="primary" onClick={this.onClickGetStarted}>Get Started</Button>
-                                {(this.props.location.state && this.props.location.state.point) &&
-                                <b>Last Score: this.props.location.state.point</b>}
+                                <div>
+                                    {(this.props.location.state && this.props.location.state.point) &&
+                                    <b>Last Score: {this.props.location.state.point}</b>}
+                                </div>
                             </CardBody>
                         </Card>
                     </Col>

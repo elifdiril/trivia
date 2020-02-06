@@ -48,7 +48,7 @@ class QuestionPage extends Component {
         let index = this.state.questionIndex;
         let joker = this.state.joker;
         let jokerUsed = this.state.jokerUsed;
-        let correctAns = this.state.correctAnswers[index];
+
 
         if (this.props.location.state && this.props.location.state.questionIndex) {
             index = this.props.location.state.questionIndex;
@@ -61,7 +61,7 @@ class QuestionPage extends Component {
         if (this.props.location.state && this.props.location.state.jokerUsed) {
             jokerUsed = this.props.location.state.jokerUsed;
         }
-
+        let correctAns = this.state.correctAnswers[index];
         if (answer === correctAns) {
             this.props.history.push('/correct-answer', {questionIndex: index, joker: joker, jokerUsed: jokerUsed});
         } else
@@ -96,7 +96,7 @@ class QuestionPage extends Component {
         }
         this.shuffle(answerArray);
 
-        if (this.state.joker === true) {
+        if (this.state.joker === true && !(this.props.location.state && this.props.location.state.jokerUsed)) {
             answerArray = [];
             answerArray.push(this.state.correctAnswers[index]);
             answerArray.push(this.state.incorrectAnswers[0]);
