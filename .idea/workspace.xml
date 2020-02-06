@@ -70,6 +70,7 @@
       <option name="project" value="LOCAL" />
       <updated>1580824804435</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="basic logic completed">
       <created>1580900673680</created>
       <option name="number" value="00002" />
@@ -92,6 +93,9 @@
       <updated>1580989608298</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+    <option name="localTasksCounter" value="2" />
+>>>>>>> 9a457248ba26ecae568663294972ed9a0e937ddf
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,9 +124,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pages edited, route cleaned up" />
+<<<<<<< HEAD
     <MESSAGE value="basic logic completed" />
     <MESSAGE value="joker added" />
     <MESSAGE value="bug fixed" />
     <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="pages edited, route cleaned up" />
+>>>>>>> 9a457248ba26ecae568663294972ed9a0e937ddf
   </component>
 </project>
