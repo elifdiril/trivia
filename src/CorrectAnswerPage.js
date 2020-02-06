@@ -6,20 +6,28 @@ import {Button, Card, CardBody, Col, Container} from "reactstrap";
 class CorrectAnswerPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            qIndex: 0
-        };
+
         this.onClickContinueButton = this.onClickContinueButton.bind(this);
     }
 
     onClickContinueButton() {
-        let index = this.state.qIndex;
-        if(this.props.location.state && this.props.location.state.questionIndex){
+        let index = 0;
+        let joker = 0;
+        if (this.props.location.state && this.props.location.state.questionIndex) {
             index = this.props.location.state.questionIndex;
+            joker = this.props.location.state.joker;
         }
-        if(index < 9){
-            this.props.history.push('/question', {questionIndex: index + 1});
-        }else{
+        let jokerUsed = false;
+        if (this.props.location.state && this.props.location.state.jokerUsed) {
+            jokerUsed = true;
+        }
+        if (index < 9) {
+            this.props.history.push('/question', {
+                questionIndex: index + 1,
+                joker: joker,
+                jokerUsed: jokerUsed
+            });
+        } else {
             this.props.history.push('/welcome');
         }
 
@@ -28,14 +36,14 @@ class CorrectAnswerPage extends Component {
     render() {
         return (
             <Container>
-                <Col xs={6}>
+                <Col md={{size: 6, offset: 3}}>
                     <Card body inverse color="info">
                         <CardBody>
                             <img src={logo} className="App-logo" alt="logo"/>
                             <CardBody>
                                 Correct!
                                 You have earned 100 points
-                                Total: {(this.props.location.state.index + 1) * 100}
+                                Total: {(this.props.location.state.questionIndex + 1) * 100}
                             </CardBody>
                             <Button onClick={this.onClickContinueButton}> Continue </Button>
                         </CardBody>
@@ -44,7 +52,6 @@ class CorrectAnswerPage extends Component {
             </Container>
         );
     }
-
 }
 
 export default CorrectAnswerPage;

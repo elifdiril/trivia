@@ -20,23 +20,27 @@ class WelcomePage extends Component {
     }
 
     onClickGetStarted() {
-    this.props.history.push('/question')
+        this.props.history.push('/question')
     }
 
 
     render() {
         return (
-            <Container className={"textAlign :center"}>
-                <Col xs={6} className="textAlign: center">
-                    <Card>
-                        <img src={logo} className="App-logo" alt="logo"/>
-                        <CardBody>
-                            <CardTitle><b> A Trivia Game </b></CardTitle>
-                            <Button color="primary" onClick={this.onClickGetStarted}>Get Started</Button>
-                        </CardBody>
-                    </Card>
-                </Col>
-            </Container>
+            <div class="d-flex align-items-center">
+                <Container>
+                    <Col md={{size: 6, offset: 3}}>
+                        <Card>
+                            <img src={logo} className="App-logo" alt="logo"/>
+                            <CardBody>
+                                <CardTitle><b> A Trivia Game </b></CardTitle>
+                                <Button color="primary" onClick={this.onClickGetStarted}>Get Started</Button>
+                                {(this.props.location.state && this.props.location.state.point) &&
+                                <b>Last Score: this.props.location.state.point</b>}
+                            </CardBody>
+                        </Card>
+                    </Col>
+                </Container>
+            </div>
         );
     }
 }

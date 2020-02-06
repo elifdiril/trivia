@@ -11,7 +11,8 @@ class QuestionPage extends Component {
             correctAnswers: [],
             incorrectAnswers: [],
             questionIndex: 0,
-            points: 0
+            joker: (this.props.location.state && this.props.location.state.joker) || false,
+            jokerUsed: (this.props.location.state && this.props.location.state.joker) || false,
         };
         this.onClickAnswerButton = this.onClickAnswerButton.bind(this);
     }
@@ -32,6 +33,7 @@ class QuestionPage extends Component {
                         values.correctAnswers.push(val[i].correct_answer);
                         values.incorrectAnswers.push(val[i].incorrect_answers);
                     }
+
                     this.setState({
                         questions: values.questions,
                         correctAnswers: values.correctAnswers,
@@ -44,15 +46,26 @@ class QuestionPage extends Component {
 
     onClickAnswerButton(answer) {
         let index = this.state.questionIndex;
-        if(this.props.location.state && this.props.location.state.questionIndex){
-            index = this.props.location.state.questionIndex;
-        }
+        let joker = this.state.joker;
+        let jokerUsed = this.state.jokerUsed;
         let correctAns = this.state.correctAnswers[index];
 
+        if (this.props.location.state && this.props.location.state.questionIndex) {
+            index = this.props.location.state.questionIndex;
+        }
+
+        if (this.props.location.state && this.props.location.state.joker) {
+            joker = this.props.location.state.joker;
+        }
+
+        if (this.props.location.state && this.props.location.state.jokerUsed) {
+            jokerUsed = this.props.location.state.jokerUsed;
+        }
+
         if (answer === correctAns) {
-            this.props.history.push('/correct-answer', {questionIndex: index});
+            this.props.history.push('/correct-answer', {questionIndex: index, joker: joker, jokerUsed: jokerUsed});
         } else
-            this.props.history.push('/wrong-answer', {points: this.state.points});
+            this.props.history.push('/wrong-answer', {questionIndex: index});
     }
 
     shuffle(array) {
@@ -68,11 +81,14 @@ class QuestionPage extends Component {
 
     render() {
         let index = this.state.questionIndex;
-        if(this.props.location.state && this.props.location.state.questionIndex){
+        let answerArray = [];
+
+        if (this.props.location.state && this.props.location.state.questionIndex) {
             index = this.props.location.state.questionIndex;
         }
-        let answerArray = [];
+
         answerArray.push(this.state.correctAnswers[index]);
+
         if (this.state.incorrectAnswers.length > 0) {
             answerArray.push(this.state.incorrectAnswers[index][0]);
             answerArray.push(this.state.incorrectAnswers[index][1]);
@@ -80,12 +96,20 @@ class QuestionPage extends Component {
         }
         this.shuffle(answerArray);
 
+        if (this.state.joker === true) {
+            answerArray = [];
+            answerArray.push(this.state.correctAnswers[index]);
+            answerArray.push(this.state.incorrectAnswers[0]);
+        }
+
         return (
             <Container>
-                <Col xs={6}>
-                    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+                <Col md={{size: 6, offset: 3}}>
+                    <Card body inverse style={{backgroundColor: '#333', borderColor: '#333'}}>
                         <CardBody>
                             <CardTitle>{this.state.questions[index]}</CardTitle>
+                            {((!this.state.joker && !(this.props.location.state && this.props.location.state.jokerUsed)) ||
+                                (this.state.joker && (this.props.location.state && this.props.location.state.jokerUsed))) &&
                             <Col>
                                 <Row>
                                     <Button color="warning"
@@ -104,6 +128,21 @@ class QuestionPage extends Component {
                                             onClick={() => this.onClickAnswerButton(answerArray[3])}>{answerArray[3]}</Button>
                                 </Row>
                             </Col>
+                            }
+                            {this.state.joker && !(this.props.location.state && this.props.location.state.jokerUsed) &&
+                            <Col>
+                                <Row>
+                                    <Button color="warning"
+                                            onClick={() => this.onClickAnswerButton(answerArray[0])}>{answerArray[0]}</Button>
+                                </Row>
+                                <Row>
+                                    <Button color="warning"
+                                            onClick={() => this.onClickAnswerButton(answerArray[1])}>{answerArray[1]}</Button>
+                                </Row>
+                            </Col>
+                            }
+                            <Button color="info" className="float-right" disabled={this.state.joker}
+                                    onClick={() => this.setState({joker: true, jokerUsed: true})}>50% Joker</Button>
                         </CardBody>
                     </Card>
                 </Col>
