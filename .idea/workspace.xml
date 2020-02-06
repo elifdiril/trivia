@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3965aca9-7cf7-430d-b4b7-36541b0a3b71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CorrectAnswerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CorrectAnswerPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuestionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WrongAnswerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/WrongAnswerPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,10 +63,49 @@
       <updated>1580709918969</updated>
       <workItem from="1580709920368" duration="16297000" />
     </task>
+    <task id="LOCAL-00001" summary="pages edited, route cleaned up">
+      <created>1580824804434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580824804435</updated>
+    </task>
+    <task id="LOCAL-00002" summary="basic logic completed">
+      <created>1580900673680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580900673680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="joker added">
+      <created>1580975117544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580975117544</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bug fixed">
+      <created>1580989608298</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580989608298</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -83,5 +117,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pages edited, route cleaned up" />
+    <MESSAGE value="basic logic completed" />
+    <MESSAGE value="joker added" />
+    <MESSAGE value="bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
   </component>
 </project>
