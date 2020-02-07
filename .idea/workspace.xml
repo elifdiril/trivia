@@ -7,6 +7,7 @@
       <change afterPath="$PROJECT_DIR$/src/correct.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/game-icon.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
@@ -16,6 +17,8 @@
       <change beforePath="$PROJECT_DIR$/src/WrongAnswerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/WrongAnswerPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/correct.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wisdom.svg" beforeDir="false" />
+=======
+>>>>>>> 83dcd18fb0b74e2ccea76bcb386011b3eca68c25
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +87,10 @@
       <option name="project" value="LOCAL" />
       <updated>1580824804435</updated>
     </task>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 83dcd18fb0b74e2ccea76bcb386011b3eca68c25
     <task id="LOCAL-00002" summary="basic logic completed">
       <created>1580900673680</created>
       <option name="number" value="00002" />
@@ -106,6 +113,12 @@
       <updated>1580989608298</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+<<<<<<< HEAD
+=======
+=======
+    <option name="localTasksCounter" value="2" />
+>>>>>>> 9a457248ba26ecae568663294972ed9a0e937ddf
+>>>>>>> 83dcd18fb0b74e2ccea76bcb386011b3eca68c25
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,9 +149,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pages edited, route cleaned up" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 83dcd18fb0b74e2ccea76bcb386011b3eca68c25
     <MESSAGE value="basic logic completed" />
     <MESSAGE value="joker added" />
     <MESSAGE value="bug fixed" />
     <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
+<<<<<<< HEAD
+=======
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="pages edited, route cleaned up" />
+>>>>>>> 9a457248ba26ecae568663294972ed9a0e937ddf
+>>>>>>> 83dcd18fb0b74e2ccea76bcb386011b3eca68c25
   </component>
 </project>
