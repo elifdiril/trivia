@@ -18,7 +18,7 @@ class QuestionPage extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://www.mocky.io/v2/5e3802b83100005100d37e37')
+        axios.get('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple')
             .then(response => {
                 if (response && response.data) {
                     let val = response.data.results;
