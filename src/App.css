@@ -9,13 +9,17 @@
 .card{
   text-align: center;
   align-items: center;
+  display: inline-block;
+  width: 40%;
+  height: 60%;
 }
 
 .container{
   align-self: stretch;
   justify-content: center;
   margin-top: 10%;
-  width: 50%;
+  margin-left: 30%;
+  width: 150%;
   height: 50%;
 }
 

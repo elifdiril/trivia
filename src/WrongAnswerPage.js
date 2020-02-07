@@ -25,7 +25,7 @@ class WrongAnswerPage extends Component {
                         <img src={logo} alt="logo" className="App-logo"/>
                         <CardBody> <b>Game Over</b> </CardBody>
                         <Button color="danger" onClick={this.onClickNewGameButton}>New Game</Button>
-                        Total Points: {this.state.point}
+                        <div>Total Points: {this.state.point}</div>                        
                     </Card>
                 </Col>
             </Container>
