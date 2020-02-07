@@ -20,7 +20,7 @@ class WrongAnswerPage extends Component {
     render() {
         return (
             <Container>
-                <Col md={{size: 6, offset: 3}}>
+                <Col>
                     <Card body inverse style={{backgroundColor: '#333', borderColor: '#333'}}>
                         <img src={logo} alt="logo" className="App-logo"/>
                         <CardBody> <b>Game Over</b> </CardBody>

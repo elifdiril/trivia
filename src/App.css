@@ -4,7 +4,6 @@
 
 .App-logo {
   height: 20vmin;
-  pointer-events: none;
 }
 
 .card{
@@ -16,4 +15,10 @@
   align-self: stretch;
   justify-content: center;
   margin-top: 10%;
+  width: 50%;
+  height: 50%;
+}
+
+.row{
+  margin: 10px;
 }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import logo from './wisdom.svg';
 import {Button} from 'reactstrap';
+import WelcomeLottie from './WelcomeLottie';
 import {
     Container, Col, Card, CardBody,
     CardTitle
@@ -28,12 +28,12 @@ class WelcomePage extends Component {
         return (
             <div className="d-flex align-items-center">
                 <Container>
-                    <Col md={{size: 6, offset: 3}}>
-                        <Card>
-                            <img src={logo} className="App-logo" alt="logo"/>
+                    <Col>
+                        <Card body inverse color="danger">
+                            <WelcomeLottie />
                             <CardBody>
                                 <CardTitle><b> A Trivia Game </b></CardTitle>
-                                <Button color="primary" onClick={this.onClickGetStarted}>Get Started</Button>
+                                <Button color="dark" onClick={this.onClickGetStarted}>Get Started</Button>
                                 <div>
                                     {(this.props.location.state && this.props.location.state.point) &&
                                     <b>Last Score: {this.props.location.state.point}</b>}

@@ -104,7 +104,7 @@ class QuestionPage extends Component {
 
         return (
             <Container>
-                <Col md={{size: 6, offset: 3}}>
+                <Col>
                     <Card body inverse style={{backgroundColor: '#333', borderColor: '#333'}}>
                         <CardBody>
                             <CardTitle>{this.state.questions[index]}</CardTitle>

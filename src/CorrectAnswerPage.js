@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import logo from './correct.svg';
 import {Button, Card, CardBody, Col, Container} from "reactstrap";
+import Lottie from './Lottie';
 
 class CorrectAnswerPage extends Component {
     constructor(props) {
@@ -36,10 +36,10 @@ class CorrectAnswerPage extends Component {
     render() {
         return (
             <Container>
-                <Col md={{size: 6, offset: 3}}>
+                <Col>
                     <Card body inverse color="info">
                         <CardBody>
-                            <img src={logo} className="App-logo" alt="logo"/>
+                            <Lottie/>
                             <CardBody>
                                 Correct!
                                 You have earned 100 points
