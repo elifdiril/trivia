@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import {Button, Card, CardBody, Col, Container} from "reactstrap";
-import logo from "./delete.svg";
+import Lottie from './WrongLottie';
 
 class WrongAnswerPage extends Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class WrongAnswerPage extends Component {
             <Container>
                 <Col>
                     <Card body inverse style={{backgroundColor: '#333', borderColor: '#333'}}>
-                        <img src={logo} alt="logo" className="App-logo"/>
+                    <Lottie/>
                         <CardBody> <b>Game Over</b> </CardBody>
                         <Button color="danger" onClick={this.onClickNewGameButton}>New Game</Button>
                         <div>Total Points: {this.state.point}</div>                        
